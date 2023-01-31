@@ -5,13 +5,13 @@ async function main() {
   const allowlistContract = await ethers.getContractFactory("Allowlist");
 
   // Deploy the contract, and cap the allowlisted addresses to max n
-  const deployedAllowlistContract = await whitelistContract.deploy(25);
+  const deployedAllowlistContract = await allowlistContract.deploy(25);
 
   // Let's do a little waiting
-  await deployedAllowContract.deployed();
+  await deployedAllowlistContract.deployed();
 
   // Log the address of our contract!
-  console.log("Allowlist Contract Address:", deployedAllowContract.address);
+  console.log("Allowlist Contract Address:", deployedAllowlistContract.address);
 }
 
 // Check for errors after running our main function

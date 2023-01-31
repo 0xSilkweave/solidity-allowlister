@@ -6,6 +6,7 @@ require("dotenv").config({ path: ".env" });
 // Private keys safu
 const QUICKNODE_HTTP_URL = process.env.QUICKNODE_HTTP_URL;
 const PRIVATE_KEY = process.env.PRIVATE_KEY;
+const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY;
 
 // Update Solidity to our contract version, and add our testnet (Goerli)
 // Again check for safu .env
@@ -17,4 +18,9 @@ module.exports = {
       accounts: [PRIVATE_KEY],
     },
   },
+  etherscan: {
+    apiKey: {
+      goerli: ETHERSCAN_API_KEY,
+    }
+  }
 };
