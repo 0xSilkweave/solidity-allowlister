@@ -1,13 +1,12 @@
 # Solidity Allowlister
 
-### **Welcome 👋**
-> Temporary text
+<img src="./background.png" alt="Background image">
 
-Just for testing purposes.
+<h1>Simple Solidity-based allowlisting contract.</h1>
 
-1. 
+Keeps track of number of allowlisted users, and prevents the same addresses to allowlist multiple times.
 
-P.S. >
+P.S. Just a contract for now, might add a dApp later on.
 
 ---
 
